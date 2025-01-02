@@ -10,9 +10,18 @@ from xhtml2pdf import pisa
 def home(request):
     return render(request, 'resume/home.html')
 
+
+
+def about_us(request):
+    return render(request, 'about.html')
+
+
 # to call temp1
 def temp1(request):
     return render(request, 'resume/temp1.html')
+
+def temp3(request):
+    return render(request, 'resume/temp3.html')
 
 # to generate temp1
 def generate_pdf(request):
