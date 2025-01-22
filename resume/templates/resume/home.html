@@ -156,12 +156,13 @@
     </style>
 </head>
 <body>
+
+
+   
     <div class="header">
-        <h1>Resume Generator</h1>
-        
-        
+        <h1>Resume Builder</h1>
         <h2>Web Application For Building Professional Branding Document</h2>
-        <h5>First Step....For the journey of your Professional Life</h5>
+        <h4>First Step....For the journey of your Professional Life</h4>
     </div><hr>
     <div  class="nav">
         <div class="dropdown">
@@ -173,17 +174,21 @@
             </div>
         </div>
         <div class="right">
-            <a href="#">Login</a>
+            <a href="{% url 'about_us' %}">Login</a>
             <a href="#">Sign Up</a>
             <div class="dropdown">
                 <button class="dropbtn">Conect Us !</button>
                 <div class="dropdown-content">
-                    <a href="#">Linkdin</a>
+                    <a href="https://www.linkedin.com/in/aarti-bismille-649740244/">Linkdin</a>
                     <a href="#">Git-Hub</a>
                     <a href="#">Email</a>
                 </div>
             </div>
             <a href="{% url 'about_us' %}">About Us !</a>
+        </div>
+        <div class="right">
+            <!-- Other links -->
+            <a href="{% url 'logout' %}" class="btn-logout">Logout</a>
         </div>
     </div><hr>
     <!-- <div class="space">
@@ -210,7 +215,7 @@
                 </div>
                 <div class="grid-item">
                     <a href="{% url 'temp3' %}">
-                        <img src="{% static 'app/images/resume3.jpeg' %}" alt="Link to Form" width="120px" height="150px">
+                        <img src="{% static 'app/images/img3 (2).jpeg' %}" alt="Link to Form" width="120px" height="150px">
                     </a>
                 </div>
                 
@@ -236,48 +241,10 @@
                 
                 
             </div>
-            <!-- Add more grid items as needed -->
-            <!-- <div class="grid-container">
-                
-                <div class="grid-item">
-                    <a href="{% url 'temp1' %}">
-                        <img src="{% static 'app/images/resume7.jpeg' %}" alt="Link to Form" width="120px" height="150px">
-                    </a>
-                </div>
-                <div class="grid-item">
-                    <a href="{% url 'temp1' %}">
-                        <img src="{% static 'app/images/resume8.jpeg' %}" alt="Link to Form" width="120px" height="150px">
-                    </a>
-                </div>
-                <div class="grid-item">
-                    <a href="{% url 'temp1' %}">
-                        <img src="{% static 'app/images/resume9.jpeg' %}" alt="Link to Form" width="120px" height="150px">
-                    </a>
-                </div>
-                
-               
-            </div> -->
-            <!-- <div class="grid-container">
-                <div class="grid-item">
-                    <a href="{% url 'temp1' %}">
-                        <img src="{% static 'app/images/resume10.jpeg' %}" alt="Link to Form" width="120px" height="150px">
-                    </a>
-                </div>
-                <div class="grid-item">
-                    <a href="{% url 'temp1' %}">
-                        <img src="{% static 'app/images/resume1.jpeg' %}" alt="Link to Form" width="120px" height="150px">
-                    </a>
-                </div>
-                <div class="grid-item">Field 4
-                    <i class="fas fa-file-alt fa-3x"></i>
-                    <p>Document Icon</p>
-                </div>
-            </div>  -->
+           
         </div>
     </div>
-    <!-- <div class="footer">
-        <p>&copy; 2024 Our Awesome Website. All rights reserved.</p>
-    </div> -->
+    
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -301,7 +268,7 @@
       <div class="social-icons">
         <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
         <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/aarti-bismille-649740244/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
       </div>
@@ -411,6 +378,21 @@
   font-size: 12px;
   text-align: center;
 }
+
+
+.btn-logout {
+    background: #e74c3c;  /* Red color for logout button */
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-logout:hover {
+    background: #c0392b;  /* Darker red on hover */
+}
+
 
 </style>
 </body>
